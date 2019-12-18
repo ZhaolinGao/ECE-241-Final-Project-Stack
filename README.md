@@ -1,4 +1,4 @@
-## ECE-241-Final-Project-Stack
+## ECE 241 Final Project Stack
 
 #### Authors: Zhaolin Gao (zhaolin.gao@mail.utoronto.ca), Yuhan Hou (yuhan.hou@mail.utoronto.ca)
 
