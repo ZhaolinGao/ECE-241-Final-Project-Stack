@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at GameModule.v(4937): object "y" differs only in case from object "Y" in the same scope File: W:/milestone_2/GameModule.v Line: 4937
+Info (10281): Verilog HDL Declaration information at GameModule.v(4936): object "x" differs only in case from object "X" in the same scope File: W:/milestone_2/GameModule.v Line: 4936

@@ -1,0 +1,247 @@
+Analysis & Synthesis report for GameModule
+Wed Nov 27 15:54:16 2019
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Nov 27 15:54:15 2019               ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name               ; GameModule                                      ;
+; Top-level Entity Name       ; GameModule                                      ;
+; Family                      ; Cyclone V                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; GameModule         ; GameModule         ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Wed Nov 27 15:53:49 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off GameModule -c GameModule
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
+    Info (12023): Found entity 1: PS2_Controller File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/PS2_Controller.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file translator.v
+    Info (12023): Found entity 1: translator File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/translator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_data_in.v
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/Altera_UP_PS2_Data_In.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/Altera_UP_PS2_Command_Out.v Line: 10
+Info (12021): Found 4 design units, including 4 entities, in source file gamemodule.v
+    Info (12023): Found entity 1: frame_counter File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 2512
+    Info (12023): Found entity 2: control File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 2539
+    Info (12023): Found entity 3: draw File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4518
+    Info (12023): Found entity 4: GameModule File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4893
+Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_pll.v
+    Info (12023): Found entity 1: vga_pll File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/vga_adapter/vga_pll.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_controller.v
+    Info (12023): Found entity 1: vga_controller File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/vga_adapter/vga_controller.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_address_translator.v
+    Info (12023): Found entity 1: vga_address_translator File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/vga_adapter/vga_address_translator.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_adapter.v
+    Info (12023): Found entity 1: vga_adapter File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/vga_adapter/vga_adapter.v Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file start.v
+    Info (12023): Found entity 1: start File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/start.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_0.v
+    Info (12023): Found entity 1: score_0 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_0.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_1.v
+    Info (12023): Found entity 1: score_1 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_1.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_2.v
+    Info (12023): Found entity 1: score_2 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_2.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_3.v
+    Info (12023): Found entity 1: score_3 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_3.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_4.v
+    Info (12023): Found entity 1: score_4 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_4.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_5.v
+    Info (12023): Found entity 1: score_5 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_5.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_6.v
+    Info (12023): Found entity 1: score_6 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_6.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_7.v
+    Info (12023): Found entity 1: score_7 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_7.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_8.v
+    Info (12023): Found entity 1: score_8 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_8.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file score_9.v
+    Info (12023): Found entity 1: score_9 File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/score_9.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file gameover.v
+    Info (12023): Found entity 1: gameover File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/gameover.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file lose.v
+    Info (12023): Found entity 1: lose File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/lose.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file win.v
+    Info (12023): Found entity 1: win File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/win.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at GameModule.v(4991): created implicit net for "start" File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4991
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4548): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4548
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4549): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4549
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4550): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4550
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4551): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4551
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4552): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4552
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4553): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4553
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4554): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4554
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4555): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4555
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4556): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4556
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4557): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4557
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4558): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4558
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(4559): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4559
+Error (10206): Verilog HDL Module Declaration error at GameModule.v(4936): top module port "PS2_CLK" is not found in the port list File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4936
+Error (10206): Verilog HDL Module Declaration error at GameModule.v(4937): top module port "PS2_DAT" is not found in the port list File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 4937
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(5011): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 5011
+Critical Warning (10846): Verilog HDL Instantiation warning at GameModule.v(5038): instance has no name File: //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.v Line: 5038
+Info (144001): Generated suppressed messages file //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 16 warnings
+    Error: Peak virtual memory: 669 megabytes
+    Error: Processing ended: Wed Nov 27 15:54:16 2019
+    Error: Elapsed time: 00:00:27
+    Error: Total CPU time (on all processors): 00:00:26
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in //SRVC/Homes$/gaozhaol/Documents/milestone_2/GameModule.map.smsg.
+
+
