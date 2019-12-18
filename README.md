@@ -5,12 +5,14 @@
 ### Overview
 
 This directory contains code necessary to run STACK implemented using verilog.
+
 Original game can be downloaded at https://play.google.com/store/apps/details?id=com.ketchapp.stack&hl=en_US
 
 
 ### Requirements
 
 DE1-SoC Board
+
 Quartus Prime (https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/download.html)
 
 	
